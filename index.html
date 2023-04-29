@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/card.css">
+  <link rel="stylesheet" href="styles/add-card.css">
+  <link rel="stylesheet" href="styles/modal.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img class="logo-icon" src="images/logo-icon.png" alt="logo icon">
+      <span class="logo-text">
+        Weather App
+      </span>
+    </div>
+  </header>
+  <main>
+    <div class="modal">
+      <div class="modal-overlay">
+        <img class="close-modal" src="images/close-icon.svg" alt="close icon">
+
+        <div class="modal-content">
+          <input type="text" class="location-input">
+          <button class="add-location-button">Add Location</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid">
+
+      <div class="grid-card">
+        <div class="add-card">
+          <button class="add-location">+</button>
+          <span>Add new location</span>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    Made with ❤️ by Ashot Hovhannisyan
+  </footer>
+
+
+  <script src="scripts/modal.js"></script>
+  <script src="scripts/add-location.js"></script>
+</body>
+
+</html>

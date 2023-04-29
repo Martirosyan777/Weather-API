@@ -1,0 +1,71 @@
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  opacity: 0;
+  -webkit-transition: all 0.5s cubic-bezier(0.78, 0.14, 0.24, 1);
+  transition: all 0.5s cubic-bezier(0.78, 0.14, 0.24, 1);
+  z-index: 2;
+}
+
+.modal.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.modal .modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal .close-modal {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.modal .modal-content {
+  width: 60%;
+  min-height: 200px;
+  background: white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal .modal-content .location-input,
+.modal .modal-content .add-location-button {
+  border-color: rgb(185, 85, 185);
+  font-size: 18px
+}
+
+.modal .modal-content .location-input {
+  height: 40px;
+  width: 60%;
+  border-radius: 10px 0 0 10px;
+  border-right: none;
+  padding: 0 10px;
+}
+
+.modal .modal-content .add-location-button {
+  height: 44px;
+  padding: 0 10px;
+  border-radius: 0 10px 10px 0;
+  background: rgb(185, 85, 185);
+  color: white;
+  cursor: pointer;
+}
